@@ -2,6 +2,14 @@
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
-Runs the app in the development mode on address [http://localhost:3333].<br />
+Runs the app in the deploy mode on address [http://localhost:3333].
+
+### `yarn dev:server`
+
+Runs the app in the development mode on address [http://localhost:3333].
+
+### `yarn test`
+
+Runs tests using Jest
