@@ -35,8 +35,10 @@ const envio = async (nome, telefone, email, dataFesta, descricao) => {
 
     return { message: 'Email enviado com sucesso.', statusCode: 200 };
   } catch (e) {
-    console.log(e);
-    return { message: 'Preencha todas as informações.', statusCode: 400 };
+    return {
+      message: 'Ocorreu um erro ao tentar enviar seu orçamento.',
+      statusCode: 400,
+    };
   }
 };
 

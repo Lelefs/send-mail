@@ -2,7 +2,7 @@ const { test, envio } = require('../services/MailService');
 
 module.exports = {
   async index(req, res) {
-    const { textoParaTeste } = req.body;
+    const textoParaTeste = 'Server running';
 
     const teste = await test(textoParaTeste);
 
