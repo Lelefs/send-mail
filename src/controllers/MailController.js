@@ -10,9 +10,15 @@ module.exports = {
   },
 
   async store(req, res) {
-    const { nome, telefone, email, dataFesta, descricao } = req.body;
+    const { nome, telefone, emailCliente, dataFesta, descricao } = req.body;
 
-    const envioEmail = await envio(nome, telefone, email, dataFesta, descricao);
+    const envioEmail = await envio(
+      nome,
+      telefone,
+      emailCliente,
+      dataFesta,
+      descricao,
+    );
 
     return res.status(envioEmail.statusCode).json(envioEmail.message);
   },
